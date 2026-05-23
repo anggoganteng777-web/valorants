@@ -5,7 +5,7 @@
 //   1. npm install
 //   2. Copy .env.example menjadi .env dan isi nilainya
 //   3. node server.js
-
+require('dotenv').config();
 require('dotenv').config();
 
 const express = require('express');
